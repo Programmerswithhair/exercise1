@@ -1,0 +1,28 @@
+#配置数据源信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #因为驱动版本在6以上，需要解决时区问题
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Shanghai
+    username: root
+    password: 821103
+    type: com.alibaba.druid.pool.DruidDataSource
+  mail:
+    host: smtp.qq.com
+    username: 442747789@qq.com
+    password: cujngfuhxqrzbhbc
+
+  task:
+    execution:
+      pool:
+        core-size: 50 #修改线程池的大小
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+
+
+
